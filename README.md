@@ -7,18 +7,15 @@ Mask R-CNN Code Examples
 
 # Configure Anaconda Environment
     conda create --name maskrcnn python=3.6
-    conda activate maskrcnn
-    conda install numpy     # to link it with Intel's MKL library for increased numpy performance
+    conda activate maskrcnn && conda install numpy     # to link it with Intel's MKL library for increased numpy performance
     
 Create a project folder and *cd* into it.
 
-    mkdir myproject
-    cd myproject
+    mkdir myproject && cd myproject
 
 Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd* into it.
 
-      git clone https://github.com/matterport/Mask_RCNN.git
-      cd Mask_RCNN
+      git clone https://github.com/matterport/Mask_RCNN.git && cd Mask_RCNN
 
 Replace the contents of the existing *requirements.txt* file with the content below:
 
@@ -61,7 +58,4 @@ Download the pre-trained model weights trained on the [COCO dataset](https://coc
 
 Clone the [cocoapi repo](https://github.com/cocodataset/cocoapi) (we're still in the Mask_RCNN folder). Navigate to the coco PythonAPI, make and istall.
 
-    git clone https://github.com/cocodataset/cocoapi.git
-    cd cocoapi/PythonAPI/
-    make && make install
-    cd ../../
+    git clone https://github.com/cocodataset/cocoapi.git && cd cocoapi/PythonAPI/ && make && make install && cd ../../
