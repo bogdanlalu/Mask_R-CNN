@@ -10,11 +10,11 @@ Mask R-CNN Code Examples
     conda activate maskrcnn
     conda install numpy     # to link it with Intel's MKL library for increased numpy performance
     
-Create a project folder and *cd* into it.
+**Create a project folder and *cd* into it.**
 
     mkdir myproject && cd myproject
 
-Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd* into it.
+**Clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd* into it.**
 
       git clone https://github.com/matterport/Mask_RCNN.git && cd Mask_RCNN
 
@@ -32,31 +32,31 @@ Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd
     IPython[all]
     jupyter
     
- Then install the requirements with pip, not with conda:
+ **Install the requirements with pip, not with conda:**
  
     pip3 install -r requirements.txt  # the file in this repo
 
-Compared to the original requirements in the [Matterport Mask R-CNN repo](https://github.com/matterport/Mask_RCNN), *new* requirements file has the following changes:
+Compared to the original requirements in the [Matterport Mask R-CNN repo](https://github.com/matterport/Mask_RCNN), the *new* requirements file has the following changes:
 
-**Excludes the following:**
+*Excludes the following:*
 
 - numpy (it was installed manually in the previous step) 
 
-**Other changes:**
+*Other changes:*
 
 - sets tensorflow==1.15.2
 - sets scipy==1.4.1 to be compatible with TF 1.15.2
 - sets keras==2.2.5 to be compatible with TF 1.15.2
 - installs jupyter
 
-Run the following:
+**Run the following:**
       
       python3 setup.py install
       
-Download the pre-trained model weights trained on the [COCO dataset](https://cocodataset.org/)
+**Download the pre-trained model weights trained on the [COCO dataset](https://cocodataset.org/)**
 
     wget https://github.com/matterport/Mask_RCNN/releases/download/v1.0/mask_rcnn_coco.h5
 
-Clone the [cocoapi repo](https://github.com/cocodataset/cocoapi) (we're still in the Mask_RCNN folder). Navigate to the coco PythonAPI, make and istall.
+**Clone the [cocoapi repo](https://github.com/cocodataset/cocoapi) make and istall the Python API.**
 
     git clone https://github.com/cocodataset/cocoapi.git && cd cocoapi/PythonAPI/ && make && make install && cd ../../
