@@ -9,17 +9,34 @@ Mask R-CNN Code Examples
     conda create --name maskrcnn python=3.6
     conda activate maskrcnn
     conda install numpy     # to link it with Intel's MKL library for increased numpy performance
-    pip3 install --file requirements2.txt  # the file in this repo
+    
+Download the requirements file in this repo or create a new one which should include the following:
 
-Compared to the original requirements in the [Matterport Mask R-CNN repo](https://github.com/matterport/Mask_RCNN), *requirements2.txt* has the following changes:
+    scipy==1.4.1
+    Pillow
+    cython
+    matplotlib
+    scikit-image
+    keras==2.2.5
+    tensorflow==1.15.2
+    h5py
+    imgaug
+    IPython[all]
+    jupyter
+    
+ Then install the requirements with pip, not with conda:
+ 
+    pip3 install -r requirements_new.txt  # the file in this repo
+
+Compared to the original requirements in the [Matterport Mask R-CNN repo](https://github.com/matterport/Mask_RCNN), *requirements_new.txt* has the following changes:
 
 **Excludes the following:**
 - numpy (it was installed manually in the previous step) 
 
 **Other changes:**
 - sets tensorflow==1.15.2
-- sets scipy==1.4.1 to be compatible with TF 1.5
-- sets keras==2.2.5 to be compatible with TF 1.5
+- sets scipy==1.4.1 to be compatible with TF 1.15.2
+- sets keras==2.2.5 to be compatible with TF 1.15.2
 - installs jupyter
 
 - Create a project folder and *cd* into it
