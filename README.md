@@ -7,7 +7,8 @@ Mask R-CNN Code Examples
 
 # Configure Anaconda Environment
     conda create --name maskrcnn python=3.6
-    conda activate maskrcnn && conda install numpy     # to link it with Intel's MKL library for increased numpy performance
+    conda activate maskrcnn
+    conda install numpy     # to link it with Intel's MKL library for increased numpy performance
     
 Create a project folder and *cd* into it.
 
