@@ -10,7 +10,17 @@ Mask R-CNN Code Examples
     conda activate maskrcnn
     conda install numpy     # to link it with Intel's MKL library for increased numpy performance
     
-Download the requirements file in this repo or create a new one which should include the following:
+Create a project folder and *cd* into it.
+
+    mkdir myproject
+    cd myproject
+
+Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd* into it.
+
+      git clone https://github.com/matterport/Mask_RCNN.git
+      cd Mask_RCNN
+
+Replace the contents of the existing *requirements.txt* file with the content below:
 
     scipy==1.4.1
     Pillow
@@ -41,17 +51,10 @@ Compared to the original requirements in the [Matterport Mask R-CNN repo](https:
 - sets keras==2.2.5 to be compatible with TF 1.15.2
 - installs jupyter
 
-
-Create a project folder and *cd* into it.
-
-    mkdir myproject
-    cd myproject
-
-Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd* into it.
-
-      git clone https://github.com/matterport/Mask_RCNN.git
-      cd Mask_RCNN
+Run the following:
+      
       python3 setup.py install
+      
 Download the pre-trained model weights trained on the [COCO dataset](https://cocodataset.org/)
 
     wget https://github.com/matterport/Mask_RCNN/releases/download/v1.0/mask_rcnn_coco.h5
