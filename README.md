@@ -31,16 +31,19 @@ Download the requirements file in this repo or create a new one which should inc
 Compared to the original requirements in the [Matterport Mask R-CNN repo](https://github.com/matterport/Mask_RCNN), *requirements_new.txt* has the following changes:
 
 **Excludes the following:**
+
 - numpy (it was installed manually in the previous step) 
 
 **Other changes:**
+
 - sets tensorflow==1.15.2
 - sets scipy==1.4.1 to be compatible with TF 1.15.2
 - sets keras==2.2.5 to be compatible with TF 1.15.2
 - installs jupyter
 
-- Create a project folder and *cd* into it
-- Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN)
+Create a project folder and *cd* into it.
+
+Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd* into it.
 
       git clone https://github.com/matterport/Mask_RCNN.git
       cd Mask_RCNN
