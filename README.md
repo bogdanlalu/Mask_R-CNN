@@ -36,7 +36,7 @@ Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd
  
     pip3 install -r requirements.txt  # the file in this repo
 
-Compared to the original requirements in the [Matterport Mask R-CNN repo](https://github.com/matterport/Mask_RCNN), *requirements_new.txt* has the following changes:
+Compared to the original requirements in the [Matterport Mask R-CNN repo](https://github.com/matterport/Mask_RCNN), *new* requirements file has the following changes:
 
 **Excludes the following:**
 
