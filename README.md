@@ -18,7 +18,7 @@ Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd
 
       git clone https://github.com/matterport/Mask_RCNN.git && cd Mask_RCNN
 
-Replace the contents of the existing *requirements.txt* file with the content below:
+**Replace the contents of the existing *requirements.txt* file with the content below:**
 
     scipy==1.4.1
     Pillow
@@ -34,7 +34,7 @@ Replace the contents of the existing *requirements.txt* file with the content be
     
  Then install the requirements with pip, not with conda:
  
-    pip3 install -r requirements_new.txt  # the file in this repo
+    pip3 install -r requirements.txt  # the file in this repo
 
 Compared to the original requirements in the [Matterport Mask R-CNN repo](https://github.com/matterport/Mask_RCNN), *requirements_new.txt* has the following changes:
 
