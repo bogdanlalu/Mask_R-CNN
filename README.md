@@ -41,7 +41,11 @@ Compared to the original requirements in the [Matterport Mask R-CNN repo](https:
 - sets keras==2.2.5 to be compatible with TF 1.15.2
 - installs jupyter
 
+
 Create a project folder and *cd* into it.
+
+    mkdir myproject
+    cd myproject
 
 Now clone the [Mask R-CNN repo](https://github.com/matterport/Mask_RCNN) and *cd* into it.
 
