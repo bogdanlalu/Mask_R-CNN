@@ -26,7 +26,7 @@ Mask R-CNN Code Examples
     matplotlib
     scikit-image==0.16.2
     keras==2.2.5
-    tensorflow==1.15.2
+    tensorflow-gpu==1.15.2
     h5py
     imgaug
     IPython[all]
