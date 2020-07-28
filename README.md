@@ -25,7 +25,7 @@ Mask R-CNN Code Examples
     cython
     matplotlib
     scikit-image==0.16.2
-    keras==2.2.5
+    keras==2.1.3
     tensorflow-gpu==1.15.2
     h5py
     imgaug
@@ -47,7 +47,7 @@ Compared to the original requirements in the [Matterport Mask R-CNN repo](https:
 - sets tensorflow to tensorflow-gpu==1.15.2
 - scikit-image==0.16.2 to generate less warnings at training
 - sets scipy==1.4.1 to be compatible with TF 1.15.2
-- sets keras==2.2.5 to be compatible with TF 1.15.2
+- sets keras==2.1.3 to be compatible with TF 1.15.2 and to train on multiple GPUs
 - installs jupyter
 
 **Run the following:**
